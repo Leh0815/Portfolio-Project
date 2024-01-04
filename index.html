@@ -7,7 +7,7 @@
     <title>Mario Hwang</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@0;1&family=Montserrat&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@0;1&family=Montserrat:wght@500&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 </head>
@@ -16,37 +16,40 @@
     <nav>
         <h1>Maro Hwang</h1>
         <ul class='navbar'>
-            <li><a href="#" id="tags">About Me</a></li>
-            <li><a href="#" id="tags">Projects</a></li>
-            <li><a href="#" id="tags">Skills</a></li>
-            <li><a href="#" id="tags">Contacts</a></li>
+            <li><a href="#" class="tags">About Me</a></li>
+            <li><a href="#" class="tags">Projects</a></li>
+            <li><a href="#" class="tags">Skills</a></li>
+            <li><a href="#" class="tags">Contacts</a></li>
         </ul>
     </nav>
 
-    <body>
-        <section>
+    <main>
+        <section class="infoTop">
             <h2 id="check">About me:</h2>
             <img src='./images/Mario.JPG' alt="Mario's picture" id="marioPic">
-            <p>As a recent graduate from the University of Adelaide with a major in Computer Science and Business, I am
+            <p class="aboutP">As a recent graduate from the University of Adelaide with a major in Computer Science and
+                Business, I am
                 delighted to embark upon a fulfilling career journey. I am actively seeking challenging positions that
                 align with my passion for technology and business innovation.
             </p>
-            <p>In conjunction with my academic achievements, I possess a substantial background in client services,
+            <p class="aboutP">In conjunction with my academic achievements, I possess a substantial background in client
+                services,
                 where I have refined my communication and problem-solving skills to consistently deliver outstanding
                 support.</p>
 
-            <p>I am genuinely enthusiastic about leveraging my expertise to contribute meaningfully to a dynamic team. I
+            <p class="aboutP">I am genuinely enthusiastic about leveraging my expertise to contribute meaningfully to a
+                dynamic team. I
                 anticipate and welcome ongoing opportunities for personal and professional growth.</p>
         </section>
 
-        <section>
+        <section class="infoMiddle">
             <h2>Experience:</h2>
-            <p>&#8594 Casino Hostat Skycity Adelaide</p>
-            <p>&#8594 Casino VIP Host at Crown Perth</p>
-            <p>&#8594 Insurance Support Consultant at Medibank</p>
+            <p class="infoMiddleP">&#8594 Casino Hostat Skycity Adelaide</p>
+            <p class="infoMiddleP">&#8594 Casino VIP Host at Crown Perth</p>
+            <p class="infoMiddleP">&#8594 Insurance Support Consultant at Medibank</p>
         </section>
 
-        <section>
+        <section class="infoBottom">
             <h2>Skills:</h2>
             <div class="skillSet">
                 <p>HTML</p>
@@ -57,8 +60,9 @@
                 <p>React</p>
             </div>
         </section>
-    </body>
+    </main>
     <footer>Thanks for visit my portfolio website!</footer>
+    <script src='/app.js'></script>
 </body>
 
 </html>

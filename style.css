@@ -3,13 +3,13 @@
     font-family: 'Montserrat', sans-serif;
     background-color: rgb(236, 236, 236);
     box-sizing: border-box;
-    font-size: 20px;
+    font-size: 16px;
     height: auto;
     width: auto;
 }
 
 body{
-    padding: 0px 300px;
+    margin: 0px 300px;
 }
 
 nav{
@@ -39,19 +39,33 @@ h2{
 
 }
 
-#tags{
+.tags{
     color:black;
     text-decoration: none;
     font-size: 1rem;
 }
+.aboutP{
+    margin: 50px 0px;
+}
 
 #marioPic{
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
     border-radius: 5%;
     float: right;
 }
 
+.infoMiddle{
+    margin: 150px 0px;
+}
+
+.infoMiddleP{
+    margin: 30px 0px;
+}
+
+.infoBottom{
+    margin: 150px 0px;
+}
 .skillSet{
     display: flex;
     justify-content: space-around;
