@@ -40,13 +40,20 @@
             <p class="aboutP">I am genuinely enthusiastic about leveraging my expertise to contribute meaningfully to a
                 dynamic team. I
                 anticipate and welcome ongoing opportunities for personal and professional growth.</p>
+            <p>
+                'Fun fact! I've been programming for'
+                <span id="time-container"></span>
+                seconds!
+            </p>
         </section>
 
         <section class="infoMiddle">
             <h2>Experience:</h2>
-            <p class="infoMiddleP">&#8594 Casino Hostat Skycity Adelaide</p>
-            <p class="infoMiddleP">&#8594 Casino VIP Host at Crown Perth</p>
-            <p class="infoMiddleP">&#8594 Insurance Support Consultant at Medibank</p>
+            <ul>
+                <li><a href="#" id="infoMiddleP">&#8594 Casino Hostat Skycity Adelaide</a></li>
+                <li><a href="#" class="infoMiddleP">&#8594 Casino VIP Host at Crown Perth</a></li>
+                <li><a href="#" class="infoMiddleP">&#8594 Insurance Support Consultant at Medibank</a></li>
+            </ul>
         </section>
 
         <section class="infoBottom">
@@ -62,7 +69,27 @@
         </section>
     </main>
     <footer>Thanks for visit my portfolio website!</footer>
-    <script src='/app.js'></script>
+    <script>
+        function updateTimer() {
+            const currentTime = new Date();
+            const hours = currentTime.getHours();
+            const minutes = currentTime.getMinutes();
+            const seconds = currentTime.getSeconds();
+
+            const formattedTime = `${padZero(hours)}:${padZero(minutes)}:${padZero(seconds)}`;
+            document.getElementById("time-container").innerText = formattedTime;
+        }
+
+        function padZero(value) {
+            return value < 10 ? `0${value}` : value;
+        }
+
+        // 更新时间每秒钟一次
+        setInterval(updateTimer, 1000);
+
+        // 初始更新
+        updateTimer();
+    </script>
 </body>
 
 </html>

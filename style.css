@@ -55,6 +55,9 @@ h2{
     float: right;
 }
 
+.infoTop{
+    margin: 50px 0px;
+}
 .infoMiddle{
     margin: 150px 0px;
 }
