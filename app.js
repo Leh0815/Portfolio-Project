@@ -1,15 +1,21 @@
-// 计算总秒数
-const totalSeconds = 6566140147;
+function updateTimer() {
+  const currentTime = new Date();
+  const hours = currentTime.getHours();
+  const minutes = currentTime.getMinutes();
+  const seconds = currentTime.getSeconds();
 
-// 将总秒数转换为年、月、日、小时、分钟、秒
-const years = Math.floor(totalSeconds / (365.25 * 24 * 60 * 60));
-const remainingSeconds = totalSeconds % (365.25 * 24 * 60 * 60);
-const days = Math.floor(remainingSeconds / (24 * 60 * 60));
-const hours = Math.floor((remainingSeconds % (24 * 60 * 60)) / (60 * 60));
-const minutes = Math.floor((remainingSeconds % (60 * 60)) / 60);
-const seconds = remainingSeconds % 60;
+  const formattedTime = `${padZero(hours)}:${padZero(minutes)}:${padZero(
+    seconds
+  )}`;
+  document.getElementById("time-container").innerText = formattedTime;
+}
 
-// 构建消息
-const message = `I've been programming for ${years} years, ${days} days, ${hours} hours, ${minutes} minutes, and ${seconds} seconds!`;
+function padZero(value) {
+  return value < 10 ? `0${value}` : value;
+}
 
-// 将消息显示在 HTML 中
+// 更新时间每秒钟一次
+setInterval(updateTimer, 1000);
+
+// 初始更新
+updateTimer();

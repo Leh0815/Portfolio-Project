@@ -50,7 +50,7 @@
         <section class="infoMiddle">
             <h2>Experience:</h2>
             <ul>
-                <li><a href="#" id="infoMiddleP">&#8594 Casino Hostat Skycity Adelaide</a></li>
+                <li><a href="#"="infoMiddleP">&#8594 Casino Hostat Skycity Adelaide</a></li>
                 <li><a href="#" class="infoMiddleP">&#8594 Casino VIP Host at Crown Perth</a></li>
                 <li><a href="#" class="infoMiddleP">&#8594 Insurance Support Consultant at Medibank</a></li>
             </ul>
@@ -69,26 +69,7 @@
         </section>
     </main>
     <footer>Thanks for visit my portfolio website!</footer>
-    <script>
-        function updateTimer() {
-            const currentTime = new Date();
-            const hours = currentTime.getHours();
-            const minutes = currentTime.getMinutes();
-            const seconds = currentTime.getSeconds();
-
-            const formattedTime = `${padZero(hours)}:${padZero(minutes)}:${padZero(seconds)}`;
-            document.getElementById("time-container").innerText = formattedTime;
-        }
-
-        function padZero(value) {
-            return value < 10 ? `0${value}` : value;
-        }
-
-        // 更新时间每秒钟一次
-        setInterval(updateTimer, 1000);
-
-        // 初始更新
-        updateTimer();
+    <script src="./app.js">
     </script>
 </body>
 
