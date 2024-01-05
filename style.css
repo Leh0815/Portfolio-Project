@@ -1,91 +1,116 @@
-*{
-    list-style-type: none;
-    font-family: 'Merriweather', serif;
-    font-family: 'Montserrat', sans-serif;
-    background-color: rgb(236, 236, 236);
-    box-sizing: border-box;
-    font-size: 16px;
-    height: auto;
-    width: auto;
+* {
+  box-sizing: border-box;
+  font-family: "Prata", serif;
+  list-style-type: none;
+  font-size: 16px;
+  height: auto;
+  width: auto;
 }
 
-a{
-    color:black;
-    text-decoration: none;
+body {
+  margin: 0 400px;
+  background: linear-gradient(to right, #36d1dc, #5b86e5);
 }
 
-body{
-    margin: 0px 300px;
+a {
+  color: black;
+  text-decoration: none;
 }
 
-nav{
-    text-align: center;
-    display: flex;
-    justify-content: space-around;
+nav {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
 }
 
-h1{
-    font-size: 2rem;
+h1 {
+  font-size: 3rem;
 }
 
-h2{
-    font-size: 1.5rem;
-    margin-left: 170px;
+h2 {
+  font-size: 2rem;
+  /* margin-left: 20px; */
 }
 
 .navbar {
-    display: flex;
-    list-style-type: none;
+  display: flex;
+  list-style-type: none;
 }
 
-.navbar li{
-    margin-left: 30px;
-    padding-top: 30px;
-    justify-content: space-between;
-
+b {
+  font-weight: bold;
+}
+.navbar li {
+  margin-left: 70px;
+  margin-top: 50px;
+  justify-content: space-between;
 }
 
-.tags{
-    color:black;
-    text-decoration: none;
-    font-size: 1rem;
+.tags,
+.infoMiddle li {
+  color: black;
+  text-decoration: none;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+#logos {
+    width:220px;
+    height: 200px;
+    /* margin: auto; */
+    float: right;
+    margin-left: 10px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    background-color: white;
+  }
+.infoTop,
+.infoMiddle,
+.infoBottom,
+.skillSet {
+  margin: 90px 0;
 }
 .aboutP{
-    margin: 50px 0px;
+    margin: 30px 0;
+    font-size: 1.1rem;
 }
 
-#marioPic{
-    height: 250px;
-    width: 250px;
-    border-radius: 5%;
-    float: right;
+/* .tags{
+    margin-left: 20px;
+} */
+
+#marioPic {
+  height: 250px;
+  width: 250px;
+  border-radius: 10px;
+  float: right;
+  margin-left: 160px;
 }
 
-.infoTop{
-    margin: 50px 0px;
+.skillSet {
+  display: flex;
+  margin: 80px 60px;
+  justify-content: space-around;
 }
 
-.infoMiddle li{
-    margin-bottom: 20px;
+.skillsIcon{
+font-size: 1.1rem;
+
 }
 
-.infoMiddle{
-    margin: 100px 0px;
+footer {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 20px;
 }
 
-.infoBottom{
-    margin: 150px 0px;
-}
-.skillSet{
-    display: flex;
-    justify-content: space-around;
-    margin: 20px 0px;
+.content {
+  margin-bottom: 30px;
 }
 
-.skillSet p{
-    margin: 50px 0px;
+.hidden {
+  display: none;
 }
-footer{
-    text-align: center;
-    margin: 200px 0px;
+
+#displayText {
+  font-size: 1.5rem;
 }

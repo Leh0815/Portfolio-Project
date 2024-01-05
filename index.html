@@ -7,8 +7,7 @@
     <title>Mario Hwang</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@0;1&family=Montserrat:wght@500&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -25,7 +24,7 @@
 
     <main>
         <section class="infoTop">
-            <h2 id="check">About me:</h2>
+            <h2 id="tags">About me:</h2>
             <img src='./images/Mario.JPG' alt="Mario's picture" id="marioPic">
             <p class="aboutP">As a recent graduate from the University of Adelaide with a major in Computer Science and
                 Business, I am
@@ -41,34 +40,53 @@
                 dynamic team. I
                 anticipate and welcome ongoing opportunities for personal and professional growth.</p>
             <p>
-                'Fun fact! I've been programming for'
+                'Fun fact! This website has been created for
                 <span id="time-container"></span>
-                seconds!
+                seconds!'
             </p>
         </section>
 
         <section class="infoMiddle">
-            <h2>Experience:</h2>
-            <ul>
-                <li><a href="#"="infoMiddleP">&#8594 Casino Hostat Skycity Adelaide</a></li>
-                <li><a href="#" class="infoMiddleP">&#8594 Casino VIP Host at Crown Perth</a></li>
-                <li><a href="#" class="infoMiddleP">&#8594 Insurance Support Consultant at Medibank</a></li>
-            </ul>
+            <h2 id="tags">Experience:</h2>
+            <br>
+            <div class="content" onclick="toggleImageAndParagraph(this)">
+                <a href="#" class="infoMiddleP" id="displayText">&#8594
+                    Casino Host
+                    at Skycity Adelaide</a>
+                <img src="./images/skycity.jpeg" class="hidden" alt="Image" id='logos'>
+                <p id=" newParagraph" class="hidden"></p>
+            </div>
+
+            <div class="content" onclick="toggleImageAndParagraph(this)">
+                <a href="#" class="infoMiddleP" id="displayText" onclick="toggleImageAndParagraph()">&#8594 Casino
+                    VIP Host at Crown Perth</a>
+                <img src="./images/crown.png" class="hidden" alt="Image" id='logos'>
+                <p id='newParagraph' class=" hidden">This is a new paragraph that appears when you click the text.</p>
+            </div>
+
+
+            <div class="content" onclick="toggleImageAndParagraph(this)">
+                <a href="#" class="infoMiddleP" id="displayText">&#8594 Insurance Support Consultant </b>at
+                    Medibank</a>
+                <img src="./images/medibank.png" class="hidden" alt="Image" id='logos'>
+                <p id='newParagraph' class=" hidden">This is a new paragraph that appears when you click the text.</p>
+            </div>
+
         </section>
 
         <section class="infoBottom">
-            <h2>Skills:</h2>
+            <h2 id="tags">Skills:</h2>
             <div class="skillSet">
-                <p>HTML</p>
-                <p>CSS</p>
-                <p>Javascript</p>
-                <p>NodeJS</p>
-                <p>Github</p>
-                <p>React</p>
+                <li><a href="#" class="skillsIcon">HTML</a></li>
+                <li><a href="#" class="skillsIcon">CSS</a></li>
+                <li><a href="#" class="skillsIcon">Javascript</a></li>
+                <li><a href="#" class="skillsIcon">NodeJS</a></li>
+                <li><a href="#" class="skillsIcon">Github</a></li>
+                <li><a href="#" class="skillsIcon">React</a></li>
             </div>
         </section>
     </main>
-    <footer>Thanks for visit my portfolio website!</footer>
+    <footer>Thanks for visit mario's portfolio website!</footer>
     <script src="./app.js">
     </script>
 </body>

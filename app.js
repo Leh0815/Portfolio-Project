@@ -19,3 +19,18 @@ setInterval(updateTimer, 1000);
 
 // 初始更新
 updateTimer();
+
+// 获取元素
+function toggleImageAndParagraph(element) {
+  var image = element.querySelector("img");
+  var paragraph = element.querySelector("p.hidden");
+
+  // 切换图片和段落的显示状态
+  if (image.style.display === "none") {
+    image.style.display = "block";
+    paragraph.style.display = "block";
+  } else {
+    image.style.display = "none";
+    paragraph.style.display = "none";
+  }
+}
