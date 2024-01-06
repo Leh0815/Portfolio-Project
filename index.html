@@ -25,25 +25,38 @@
     <main>
         <section class="infoTop">
             <h2 id="tags">About me:</h2>
-            <img src='./images/Mario.JPG' alt="Mario's picture" id="marioPic">
-            <p class="aboutP">As a recent graduate from the University of Adelaide with a major in Computer Science and
+            <img src='./images/mario.png' alt="Mario's picture" id="marioPic">
+            <p class="aboutP">
+                <span id="capt">As</span> a recent graduate from the University of Adelaide with a major in Computer
+                Science
+                and
                 Business, I am
                 delighted to embark upon a fulfilling career journey. I am actively seeking challenging positions that
                 align with my passion for technology and business innovation.
             </p>
-            <p class="aboutP">In conjunction with my academic achievements, I possess a substantial background in client
+            <p class="aboutP">
+                <Span id="capt">In</Span> conjunction with my academic achievements, I possess a substantial background
+                in
+                client
                 services,
                 where I have refined my communication and problem-solving skills to consistently deliver outstanding
-                support.</p>
+                support.
+            </p>
 
-            <p class="aboutP">I am genuinely enthusiastic about leveraging my expertise to contribute meaningfully to a
+            <p class="aboutP">
+                <span id="capt">I</span>am genuinely enthusiastic about leveraging my expertise to
+                contribute
+                meaningfully to a
                 dynamic team. I
-                anticipate and welcome ongoing opportunities for personal and professional growth.</p>
-            <p>
+                anticipate and welcome ongoing opportunities for personal and professional growth.
+            </p>
+
+            <Span id="capt">
                 'Fun fact! This website has been created for
                 <span id="time-container"></span>
-                seconds!'
-            </p>
+                !'
+            </Span>
+
         </section>
 
         <section class="infoMiddle">
@@ -53,7 +66,7 @@
                 <a href="#" class="infoMiddleP" id="displayText">&#8594
                     Casino Host
                     at Skycity Adelaide</a>
-                <img src="./images/skycity.jpeg" class="hidden" alt="Image" id='logos'>
+                <img src="./images/skycity.png" class="hidden" alt="Image" id='logos'>
                 <p id=" newParagraph" class="hidden"></p>
             </div>
 
@@ -75,14 +88,33 @@
         </section>
 
         <section class="infoBottom">
-            <h2 id="tags">Skills:</h2>
+            <h2 id="tags" onclick="toggleImageAndParagraph(this)">Skills:</h2>
             <div class="skillSet">
-                <li><a href="#" class="skillsIcon">HTML</a></li>
-                <li><a href="#" class="skillsIcon">CSS</a></li>
-                <li><a href="#" class="skillsIcon">Javascript</a></li>
-                <li><a href="#" class="skillsIcon">NodeJS</a></li>
-                <li><a href="#" class="skillsIcon">Github</a></li>
-                <li><a href="#" class="skillsIcon">React</a></li>
+                <div class="skillContainer">
+                    <div class="skillText">HTML</div>
+                    <img class='skillImgs' src="./images/html.png">
+                </div>
+                <div class="skillContainer">
+                    <div class="skillText">CSS</div>
+                    <img class='skillImgs' src="./images/css.png">
+                </div>
+
+                <div class="skillContainer">
+                    <div class="skillText">JavaScript</div>
+                    <img class='skillImgs' src="./images/js.png">
+                </div>
+                <div class="skillContainer">
+                    <div class="skillText">NodeJS</div>
+                    <img class='skillImgs' src="./images/nodejs.png">
+                </div>
+                <div class="skillContainer">
+                    <div class="skillText">React</div>
+                    <img class='skillImgs' src="./images/react.png">
+                </div>
+                <div class="skillContainer">
+                    <div class="skillText">Github</div>
+                    <img class='skillImgs' src="./images/github.png">
+                </div>
             </div>
         </section>
     </main>

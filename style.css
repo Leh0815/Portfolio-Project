@@ -24,12 +24,11 @@ nav {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 h2 {
-  font-size: 2rem;
-  /* margin-left: 20px; */
+  font-size: 1.6rem;
 }
 
 .navbar {
@@ -40,6 +39,7 @@ h2 {
 b {
   font-weight: bold;
 }
+
 .navbar li {
   margin-left: 70px;
   margin-top: 50px;
@@ -53,54 +53,50 @@ b {
   font-size: 1rem;
   margin-bottom: 15px;
 }
+
 #logos {
-    width:220px;
-    height: 200px;
-    /* margin: auto; */
-    float: right;
-    margin-left: 10px;
-    margin-bottom: 40px;
-    border-radius: 10px;
-    background-color: white;
-  }
+  width: 100px;
+  height: 100px;
+  margin: 20px 40px;
+  border-radius: 5px;
+  float: right;
+}
+
 .infoTop,
 .infoMiddle,
 .infoBottom,
 .skillSet {
-  margin: 90px 0;
-}
-.aboutP{
-    margin: 30px 0;
-    font-size: 1.1rem;
+  margin: 80px 0;
 }
 
-/* .tags{
-    margin-left: 20px;
-} */
+.aboutP {
+  margin: 40px 0;
+  font-size: 1.1rem;
+}
+
+#capt {
+  font-size: 1.8rem;
+}
+
+#time-container {
+  font-size: 2rem;
+}
 
 #marioPic {
-  height: 250px;
-  width: 250px;
-  border-radius: 10px;
+  height: 200px;
+  width: 200px;
   float: right;
-  margin-left: 160px;
+  margin-left: 180px;
 }
 
 .skillSet {
   display: flex;
-  margin: 80px 60px;
+  margin: 60px 0px;
   justify-content: space-around;
 }
 
-.skillsIcon{
-font-size: 1.1rem;
-
-}
-
-footer {
-  text-align: center;
-  margin-top: 100px;
-  margin-bottom: 20px;
+.skillText{
+    font-size: 1.2rem;
 }
 
 .content {
@@ -108,9 +104,42 @@ footer {
 }
 
 .hidden {
-  display: none;
+  /* display: none; */
+  margin-bottom: 40px;
+  /* transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275); */
 }
 
-#displayText {
+/* #displayText {
   font-size: 1.5rem;
+} */
+
+.skillImgs {
+  height: 60px;
+  width: 60px;
+  margin-left: 20px;
+  margin-top: 20px;
+  position: relative;
+  /* top: 20px; */
+  right:15px;
+  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.skillContainer:hover .skillImgs {
+  transform: scale(2.5) rotate(360deg);
+}
+
+.skillContainer:hover  .skillText{
+    display: none;
+}
+ 
+.skillContainer {
+  position: relative;
+  display: inline-block;
+}
+
+footer {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 20px;
+  font-size: 1.4rem;
 }
