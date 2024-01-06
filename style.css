@@ -1,11 +1,14 @@
 * {
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: rgb(0, 0, 0);
   list-style-type: none;
   font-size: 16px;
   height: auto;
   width: auto;
+}
+img{
+  cursor:zoom-in;
 }
 
 body {
@@ -66,9 +69,9 @@ b {
 }
 
 #logos {
-  width: 100px;
-  height: 100px;
-  margin: 20px 40px;
+  width: 80px;
+  height: 80px;
+  margin: 10px 20px;
   border-radius: 5px;
   float: right;
 }
@@ -76,8 +79,9 @@ b {
 .infoTop,
 .infoMiddle,
 .infoBottom,
-.skillSet {
-  margin: 60px 0;
+.skillSet ,
+.eduInfoBox{
+  margin: 80px 0;
 }
 
 .aboutP {
@@ -88,6 +92,11 @@ b {
   font-size: 1.6rem;
 }
 
+.boxMiddle {
+  display: flex;
+  gap: 60px;
+  /* padding-left: 30px; */
+}
 #time-container {
   font-size: 2rem;
 }
@@ -102,8 +111,8 @@ b {
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   background: linear-gradient(to right, #f54623, #1f63ec);
-  transform: rotate(0deg); 
-  transition: transform 0.5s ease-in-out; 
+  transform: rotate(0deg);
+  transition: transform 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 #marioPic:hover {
@@ -141,7 +150,7 @@ b {
   margin-top: 20px;
   position: relative;
   right: 15px;
-  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .skillContainer:hover .skillImgs {
@@ -157,6 +166,40 @@ b {
   display: inline-block;
 }
 
+.schoolInfo {
+  display: flex;
+  justify-content: space-around;
+  gap: 100px;
+  align-items: center;
+}
+
+.eduDetails {
+  text-align: center;
+}
+
+.schoolName {
+  font-size: 1.5rem;
+}
+
+.majorName {
+  margin: 20px 40px;
+  font-size: 1.1rem;
+}
+
+.countryFlag {
+  height: 80px;
+  width: 80px;
+  margin: 20px 60px;
+  justify-content: space-around;
+  transition: transform 0.3s ease-in-out; 
+}
+
+
+.countryFlag:hover {
+  transform: scale(1.6); 
+  filter: brightness(1.2); 
+}
+
 footer {
   text-align: center;
   margin-top: 80px;
@@ -165,67 +208,73 @@ footer {
 }
 
 @media screen and (max-width: 1200px) {
-    *{
-        font-size: 16px;
-    }
-    body {
-      margin: 50px 100px;
-      padding: 0;
-    }
-    nav {
-      flex-direction: column;
-     
-    }
-    navbar {
-        justify-content: center;
-        text-align: center;
-    }
-    
-    .navbar li {
-      margin: 10px 10px;
-      
-    }
+  * {
+    font-size: 16px;
   }
-  
-  @media screen and (max-width: 768px) {
-    *{
-        font-size: 12px;
-    }
-    body {
-      margin: 10px 40px;
-      padding: 0;
-    }
-    nav {
-      flex-direction: column;
-    }
-    .navbar li {
-      margin: 10px 0;
-    }
-    #logos {
-      width: 60px;
-      height: 60px;
-      margin: 5px 10px;
-    }
-    .skillSet {
-      flex-direction: column;
-      text-align: center;
-      
-    }
-    .skillContainer{
-        padding-bottom: 5px;
-    }
-    #marioPic {
-      height: 120px;
-      width: 120px;
-      margin-left: 40px;
-    }
-    .skillImgs {
-      height: 30px;
-      width: 30px;
-        justify-content: center;
-        align-items: center;
-      /* margin-left: 5px; */
-      margin-top: 5px;
-      right: 5px;
-    }
+  body {
+    margin: 50px 100px;
+    padding: 0;
   }
+  nav {
+    flex-direction: column;
+  }
+  navbar {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .navbar li {
+    margin: 10px 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  * {
+    font-size: 8px;
+    text-align: center;
+  }
+  body {
+    margin: 10px 20px;
+    padding: 0;
+  }
+  nav {
+    flex-direction: column;
+  }
+  .navbar li {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+  #logos {
+    width: 40px;
+    height: 40px;
+    margin: 5px 10px;
+  }
+  .skillSet {
+    flex-direction: column;
+    text-align: center;
+  }
+  .infoTop,
+  .infoMiddle,
+  .infoBottom,
+  .skillSet {
+    margin: 40px 0;
+  }
+  .skillContainer {
+    padding-bottom: 5px;
+  }
+  #marioPic {
+    height: 120px;
+    width: 120px;
+    margin-left: 40px;
+  }
+  .skillImgs {
+    height: 30px;
+    width: 30px;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 5px; */
+    margin-top: 5px;
+    right: 5px;
+  }
+}
