@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   font-family: "Prata", serif;
+  color: rgb(0, 0, 0);
   list-style-type: none;
   font-size: 16px;
   height: auto;
@@ -9,7 +10,7 @@
 
 body {
   margin: 0 400px;
-  background: linear-gradient(to right, #36d1dc, #5b86e5);
+  background: linear-gradient(to right, #00c6ff, #0072ff);
 }
 
 a {
@@ -24,11 +25,12 @@ nav {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 3rem;
+  /* margin-right: 100px; */
 }
 
 h2 {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 
 .navbar {
@@ -41,9 +43,14 @@ b {
 }
 
 .navbar li {
-  margin-left: 70px;
+  margin-left: 100px;
   margin-top: 50px;
   justify-content: space-between;
+  transition: font-size 0.3s ease;
+}
+
+.navbar li a {
+  font-size: 1.2rem;
 }
 
 .tags,
@@ -51,7 +58,11 @@ b {
   color: black;
   text-decoration: none;
   font-size: 1rem;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
+}
+
+.navbar:hover li {
+  font-size: 1.2rem;
 }
 
 #logos {
@@ -66,16 +77,15 @@ b {
 .infoMiddle,
 .infoBottom,
 .skillSet {
-  margin: 80px 0;
+  margin: 60px 0;
 }
 
 .aboutP {
   margin: 40px 0;
-  font-size: 1.1rem;
 }
 
 #capt {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 
 #time-container {
@@ -87,6 +97,7 @@ b {
   width: 200px;
   float: right;
   margin-left: 180px;
+  margin-bottom: 5px;
 }
 
 .skillSet {
@@ -95,8 +106,8 @@ b {
   justify-content: space-around;
 }
 
-.skillText{
-    font-size: 1.2rem;
+.skillText {
+  font-size: 1.2rem;
 }
 
 .content {
@@ -109,9 +120,9 @@ b {
   /* transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275); */
 }
 
-/* #displayText {
-  font-size: 1.5rem;
-} */
+#displayText {
+  font-size: 1.2rem;
+}
 
 .skillImgs {
   height: 60px;
@@ -120,7 +131,7 @@ b {
   margin-top: 20px;
   position: relative;
   /* top: 20px; */
-  right:15px;
+  right: 15px;
   transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
@@ -128,10 +139,10 @@ b {
   transform: scale(2.5) rotate(360deg);
 }
 
-.skillContainer:hover  .skillText{
-    display: none;
+.skillContainer:hover .skillText {
+  display: none;
 }
- 
+
 .skillContainer {
   position: relative;
   display: inline-block;
@@ -143,3 +154,69 @@ footer {
   margin-bottom: 20px;
   font-size: 1.4rem;
 }
+
+@media screen and (max-width: 1200px) {
+    *{
+        font-size: 16px;
+    }
+    body {
+      margin: 50px 100px;
+      padding: 0;
+    }
+    nav {
+      flex-direction: column;
+     
+    }
+    navbar {
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .navbar li {
+      margin: 10px 10px;
+      
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    *{
+        font-size: 12px;
+    }
+    body {
+      margin: 10px 40px;
+      padding: 0;
+    }
+    nav {
+      flex-direction: column;
+    }
+    .navbar li {
+      margin: 10px 0;
+    }
+    #logos {
+      width: 60px;
+      height: 60px;
+      margin: 5px 10px;
+    }
+    .skillSet {
+      flex-direction: column;
+      text-align: center;
+      
+    }
+    .skillContainer{
+        padding-bottom: 5px;
+    }
+    #marioPic {
+      height: 120px;
+      width: 120px;
+      margin-left: 40px;
+    }
+    .skillImgs {
+      height: 30px;
+      width: 30px;
+        justify-content: center;
+        align-items: center;
+      /* margin-left: 5px; */
+      margin-top: 5px;
+      right: 5px;
+    }
+  }
