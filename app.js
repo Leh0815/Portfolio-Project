@@ -30,6 +30,3 @@ function toggleImageAndParagraph(element) {
     paragraph.style.display = "none";
   }
 }
-
-// const zoomImage = document.querySelector(".skillImgs");
-// zoomImage.src = "your-new-image.jpg";

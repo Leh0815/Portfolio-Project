@@ -7,12 +7,12 @@
     <title>Mario's Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
@@ -31,7 +31,7 @@
             <h2 id="tags">About me:</h2>
             <img src='./images/Boy.png' alt="Mario's picture" id="marioPic">
             <p class="aboutP">
-                <span id="capt">As</span> a recent graduate from the University of Adelaide with a major in Computer
+                <span id="capt">A</span>s a recent graduate from the University of Adelaide with a major in Computer
                 Science
                 and
                 Business, I am
@@ -39,7 +39,7 @@
                 align with my passion for technology and business innovation.
             </p>
             <p class="aboutP">
-                <Span id="capt">In</Span> conjunction with my academic achievements, I possess a substantial background
+                <Span id="capt">I</Span>n conjunction with my academic achievements, I possess a substantial background
                 in
                 client
                 services,
@@ -48,7 +48,7 @@
             </p>
 
             <p class="aboutP">
-                <span id="capt">I</span>am genuinely enthusiastic about leveraging my expertise to
+                <span id="capt">I</span> am genuinely enthusiastic about leveraging my expertise to
                 contribute
                 meaningfully to a
                 dynamic team. I
@@ -65,34 +65,56 @@
 
         <section class="infoMiddle">
             <h2 id="tags">Experience:</h2>
-            <br>
-            <div class="content" onclick="toggleImageAndParagraph(this)">
-                <a href="#" class="infoMiddleP" id="displayText">&#8594
-                    Casino Host
-                    at Skycity Adelaide</a>
-                <img src="./images/skycity.png" class="hidden" alt="Image" id='logos'>
-                <p id="newParagraph" class="hidden">I worked at Skycity Adelaide from October 2021 until April 2023. I
-                    worked in the casino VIP department in the role of a casino host.</p>
+            <div class="boxMiddle">
+                <div class="content" onclick="toggleImageAndParagraph(this)">
+                    <a href="#" class="infoMiddleP" id="displayText">&#8594
+                        Casino Host
+                        at Skycity Adelaide</a>
+                    <img src="./images/skycity.png" class="hidden" alt="Image" id='logos'>
+                    <p id="newParagraph" class="hidden">I worked at Skycity Adelaide from October 2021 until April 2023.
+                        I
+                        worked in the casino VIP department in the role of a casino host.</p>
+                </div>
+
+                <div class="content" onclick="toggleImageAndParagraph(this)">
+                    <a href="#" class="infoMiddleP" id="displayText" onclick="toggleImageAndParagraph()">&#8594 Casino
+                        VIP Host at Crown Perth</a>
+                    <img src="./images/crown.png" class="hidden" alt="Image" id='logos'>
+                    <p id='newParagraph' class=" hidden">In April 2023, I joined the VIP department at Crown Perth and
+                        worked there for six months before resigning from the position on October 4, 2023</p>
+                </div>
+
+
+                <div class="content" onclick="toggleImageAndParagraph(this)">
+                    <a href="#" class="infoMiddleP" id="displayText">&#8594 Insurance Support Consultant </b>at
+                        Medibank</a>
+                    <img src="./images/medibank.png" class="hidden" alt="Image" id='logos'>
+                    <p id='newParagraph' class=" hidden">After leaving my job at Crown Perth, I joined Australia's
+                        largest
+                        health insurance provider, 'Medibank,' as an Insurance Support Consultant. I am still working
+                        for
+                        this company to date.</p>
+                </div>
             </div>
+        </section>
 
-            <div class="content" onclick="toggleImageAndParagraph(this)">
-                <a href="#" class="infoMiddleP" id="displayText" onclick="toggleImageAndParagraph()">&#8594 Casino
-                    VIP Host at Crown Perth</a>
-                <img src="./images/crown.png" class="hidden" alt="Image" id='logos'>
-                <p id='newParagraph' class=" hidden">In April 2023, I joined the VIP department at Crown Perth and
-                    worked there for six months before resigning from the position on October 4, 2023</p>
+        <section class="eduInfoBox">
+            <h2 id="tags" onclick="toggleImageAndParagraph(this)">Education:</h2>
+            <div class="schoolInfo">
+                <div class="eduDetails">
+                    <p class="schoolName">Singapore University of Technology and Design</p>
+                    <p class="majorName">Bachelor of Electrical Engineering</p>
+                    <img class='countryFlag' src="./images/singapore.png" alt="Singapre Flag">
+                    <p id="studyYear">2015-2018</p>
+                </div>
+
+                <div class="eduDetails">
+                    <p class="schoolName">University Of Adelaide</p>
+                    <p class="majorName">Master of Compute Science</p>
+                    <img class='countryFlag' src="./images/australia.png" alt="Australia Flag">
+                    <p id="studyYear">2021-2023</p>
+                </div>
             </div>
-
-
-            <div class="content" onclick="toggleImageAndParagraph(this)">
-                <a href="#" class="infoMiddleP" id="displayText">&#8594 Insurance Support Consultant </b>at
-                    Medibank</a>
-                <img src="./images/medibank.png" class="hidden" alt="Image" id='logos'>
-                <p id='newParagraph' class=" hidden">After leaving my job at Crown Perth, I joined Australia's largest
-                    health insurance provider, 'Medibank,' as an Insurance Support Consultant. I am still working for
-                    this company to date.</p>
-            </div>
-
         </section>
 
         <section class="infoBottom">
