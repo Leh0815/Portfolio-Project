@@ -1,24 +1,24 @@
-const targetDate = new Date("2024-01-31T00:00:00");
+let elapsedSeconds = 0;
 
-function updateElapsedTime() {
-  const currentDate = new Date();
+function updateTimer() {
+  // 计算天、小时、分钟和秒
+  const days = Math.floor(elapsedSeconds / (24 * 60 * 60));
+  const hours = Math.floor((elapsedSeconds % (24 * 60 * 60)) / 3600);
+  const minutes = Math.floor((elapsedSeconds % 3600) / 60);
+  const seconds = elapsedSeconds % 60;
 
-  const timeDifference = targetDate - currentDate;
-
-  const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
-  const hours = Math.floor(
-    (timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-  );
-  const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
-  const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
-
+  // 更新页面上的计时器
   document.getElementById(
-    "time"
+    "timer"
   ).innerHTML = `${days} days ${hours} hours ${minutes} minutes ${seconds} seconds`;
+
+  // 增加逝去的秒数
+  elapsedSeconds++;
 }
 
-updateElapsedTime();
-setInterval(updateElapsedTime, 1000);
+// 初始调用一次，然后每秒更新一次
+updateTimer();
+setInterval(updateTimer, 1000);
 
 function toggleImageAndParagraph(element) {
   var image = element.querySelector("img");
